@@ -1,0 +1,11 @@
+test_bad_reference (test_project.ProjectTests.test_bad_reference) ... ok
+test_formulas (test_project.ProjectTests.test_formulas) ... ok
+test_links (test_project.ProjectTests.test_links) ... ok
+test_offline (test_project.ProjectTests.test_offline) ... ok
+test_retry_limit (test_project.ProjectTests.test_retry_limit) ... ok
+test_slide_missing_field (test_project.ProjectTests.test_slide_missing_field) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.005s
+
+OK

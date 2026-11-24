@@ -1,0 +1,199 @@
+[
+  {
+    "id": 1,
+    "topic": "intro",
+    "title": "從零開始理解 MLB 進階數據",
+    "body": "從打擊、投球、整體價值與擊球品質四個角度分析球員。",
+    "formula": "四個視角 → 綜合判斷",
+    "example": "學完能說明 OPS、wRC+、FIP 與 WAR 的差異。",
+    "caveat": "不要只靠單一數字判斷球員。",
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05"
+    ]
+  },
+  {
+    "id": 2,
+    "topic": "intro",
+    "title": "為什麼需要進階數據？",
+    "body": "傳統結果數據受機會與比賽情境影響；進階數據補充不同觀察角度。",
+    "formula": "結果 ≠ 能力的完整描述",
+    "example": "假設 A、B 打擊率同為 .300，但 A 保送更多，可能更常上壘。",
+    "caveat": "進階指標也有模型假設。",
+    "sources": [
+      "S01",
+      "S06"
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "batting",
+    "title": "AVG、HR、RBI",
+    "body": "AVG 看安打頻率，HR 看全壘打總數，RBI 看打點。",
+    "formula": "AVG = H / AB",
+    "example": "100 打數、30 安打 → .300。",
+    "caveat": "打點受隊友上壘機會影響；AVG 不計保送。",
+    "sources": [
+      "S06"
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "batting",
+    "title": "OBP、SLG 與 OPS",
+    "body": "OBP 衡量上壘，SLG 衡量每打數壘打數。OPS 是兩者相加。",
+    "formula": "OBP=(H+BB+HBP)/(AB+BB+HBP+SF)；SLG=TB/AB；OPS=OBP+SLG",
+    "example": "假設 OBP .400、SLG .600 → OPS 1.000。",
+    "caveat": "OPS 不區分兩部分對得分的不同權重。",
+    "sources": [
+      "S01",
+      "S06"
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "advanced",
+    "title": "OPS+ 與 wRC+",
+    "body": "兩者以100為平均基準，校正聯盟與球場；wRC+ 以加權得分貢獻為基礎。",
+    "formula": "100 = 聯盟平均",
+    "example": "wRC+ 125 → 同等打席約高於平均25%。",
+    "caveat": "OPS+ 並非單純 OPS 除以聯盟 OPS；wRC+ 不包含守備。",
+    "sources": [
+      "S01",
+      "S02"
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "advanced",
+    "title": "wOBA：加權上壘率",
+    "body": "保送、安打與全壘打各有不同得分價值，不能全部視為相同。",
+    "formula": "wOBA = 加權打擊事件總和 / 適用打席分母",
+    "example": "示意權重：保送0.7、一壘安打0.9、全壘打2.0。",
+    "caveat": "示意權重非官方球季係數；正式分母 AB+BB−IBB+SF+HBP。",
+    "sources": [
+      "S02",
+      "S06"
+    ]
+  },
+  {
+    "id": 7,
+    "topic": "pitching",
+    "title": "ERA 與 WHIP",
+    "body": "ERA 看每九局自責分；WHIP 看每局安打與保送造成的上壘。",
+    "formula": "ERA=9×ER/IP；WHIP=(BB+H)/IP",
+    "example": "假設90局、30自責分、70安打、20保送 → ERA 3.00、WHIP 1.00。",
+    "caveat": "局數 .1/.2 表示一/二個出局數，不是十進位。",
+    "sources": [
+      "S07"
+    ]
+  },
+  {
+    "id": 8,
+    "topic": "pitching",
+    "title": "FIP 與 xFIP",
+    "body": "FIP 著重全壘打、保送、觸身與三振；xFIP 將全壘打替換為預期全壘打。",
+    "formula": "FIP=(13×HR+3×(BB+HBP)−2×K)/IP+C",
+    "example": "假設100局、10 HR、30 BB、0 HBP、100 K、C=3.10 → FIP 3.30。",
+    "caveat": "C 依球季調整；xFIP 假設聯盟平均 HR/FB，不一定適用每位投手。",
+    "sources": [
+      "S03",
+      "S07"
+    ]
+  },
+  {
+    "id": 9,
+    "topic": "war",
+    "title": "WAR：球員整體價值",
+    "body": "估計球員比可替代水準多貢獻多少勝場。",
+    "formula": "野手 WAR ≈ 相對替代水準得分 / 每勝所需得分",
+    "example": "假設多創造50分，每勝10分 → 約5 WAR。",
+    "caveat": "不是實際多贏五場的保證；出賽時間也影響累積值。",
+    "sources": [
+      "S04"
+    ]
+  },
+  {
+    "id": 10,
+    "topic": "war",
+    "title": "fWAR 與 bWAR",
+    "body": "兩套 WAR 使用相同概念但估計方法不同；投手差異尤其明顯。",
+    "formula": "fWAR：FIP 為主｜bWAR：失分調整為主",
+    "example": "同一投手可能出現不同 WAR，應在同平台比較。",
+    "caveat": "勿直接混合兩套 WAR 或把差異當成錯誤。",
+    "sources": [
+      "S04",
+      "S03"
+    ]
+  },
+  {
+    "id": 11,
+    "topic": "statcast",
+    "title": "Statcast 是什麼？",
+    "body": "追蹤球與球員運動，將場上動作轉換成可分析數據。",
+    "formula": "場上動作 → 量測 → 指標",
+    "example": "擊球速度、角度可用來分析擊球品質。",
+    "caveat": "量測資料與模型估計值不同。",
+    "sources": [
+      "S05",
+      "S08"
+    ]
+  },
+  {
+    "id": 12,
+    "topic": "statcast",
+    "title": "EV、Barrel 與 Hard-Hit%",
+    "body": "EV 是擊球初速；Barrel 同時考量速度與角度。",
+    "formula": "Hard-Hit% = 初速 ≥ 95 mph 的 BBE / BBE × 100%",
+    "example": "100次擊球事件中40次達95 mph → 40%。",
+    "caveat": "不是所有強擊球都是 Barrel；分母不是打席。",
+    "sources": [
+      "S08"
+    ]
+  },
+  {
+    "id": 13,
+    "topic": "statcast",
+    "title": "xBA 與 xwOBA",
+    "body": "依類似擊球的結果估計安打與打擊價值；部分擊球考慮跑速。",
+    "formula": "比較實際值與期望值",
+    "example": "假設 AVG .260、xBA .300，可能值得進一步調查。",
+    "caveat": "差距不等於純運氣，也不保證未來回歸；xwOBA 並非只看擊球。",
+    "sources": [
+      "S08",
+      "S05"
+    ]
+  },
+  {
+    "id": 14,
+    "topic": "players",
+    "title": "2025 真實球員案例",
+    "body": "Judge 與 Ohtani 可比較擊球品質；Skenes 用投球指標解讀。",
+    "formula": "2025 MLB 例行賽｜同一來源",
+    "example": "Judge：AVG .331、96 barrels；Ohtani：55 HR、100 barrels；Skenes：ERA 1.97。",
+    "caveat": "Barrels 為累積次數，不是 Barrel%；不同角色不可直接用不同指標排名。",
+    "sources": [
+      "S09",
+      "S08",
+      "S07"
+    ]
+  },
+  {
+    "id": 15,
+    "topic": "review",
+    "title": "測驗與總結",
+    "body": "選擇符合問題的指標：上壘與長打、校正打擊、投球能力、整體價值。",
+    "formula": "OPS → wRC+ → FIP → WAR",
+    "example": "完成下方測驗，確認你能辨別各指標用途。",
+    "caveat": "比較時注意球季、樣本、平台與分母。",
+    "sources": [
+      "S01",
+      "S02",
+      "S03",
+      "S04"
+    ]
+  }
+]
