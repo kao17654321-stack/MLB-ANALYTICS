@@ -1,0 +1,45 @@
+{
+  "mode": "offline",
+  "events": [
+    {
+      "node": "collect",
+      "errors": [],
+      "attempt": 0
+    },
+    {
+      "node": "ingest",
+      "errors": [],
+      "attempt": 0
+    },
+    {
+      "node": "check_wiki",
+      "errors": [],
+      "attempt": 1
+    },
+    {
+      "node": "query",
+      "errors": [],
+      "attempt": 1
+    },
+    {
+      "node": "generate",
+      "errors": [],
+      "attempt": 0
+    },
+    {
+      "node": "check_slides",
+      "errors": [],
+      "attempt": 1
+    },
+    {
+      "node": "render",
+      "errors": [],
+      "attempt": 0
+    },
+    {
+      "node": "check_html",
+      "errors": [],
+      "attempt": 1
+    }
+  ]
+}

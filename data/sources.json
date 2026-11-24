@@ -1,0 +1,56 @@
+{
+  "S01": {
+    "title": "OPS and OPS+",
+    "url": "https://library.fangraphs.com/offense/ops/",
+    "summary": "OPS = OBP + SLG；OBP=(H+BB+HBP)/(AB+BB+HBP+SF)；SLG=TB/AB。OPS+ 以聯盟平均100為基準並校正球場。OPS 對兩部分等權，並非精確得分模型。",
+    "accessed": "2026-11-24"
+  },
+  "S02": {
+    "title": "wRC and wRC+",
+    "url": "https://library.fangraphs.com/offense/wrc/",
+    "summary": "wRC 是累積得分貢獻估計；wRC+ 校正球場及聯盟，100 為平均，125 表示每打席得分創造能力高25%。不包含守備與位置價值。",
+    "accessed": "2026-11-24"
+  },
+  "S03": {
+    "title": "FIP",
+    "url": "https://library.fangraphs.com/pitching/fip/",
+    "summary": "FIP=(13×HR+3×(BB+HBP)−2×K)/IP+C。C 隨球季變動，使聯盟平均對齊 ERA；降低守備與事件順序影響，但非完全衡量投手能力。",
+    "accessed": "2026-11-24"
+  },
+  "S04": {
+    "title": "What is WAR?",
+    "url": "https://library.fangraphs.com/misc/war/",
+    "summary": "WAR 估計相對替代水準的額外勝場；野手包含打擊、跑壘、守備及位置等調整。fWAR 投手以 FIP 為主，bWAR 投手以失分及守備等調整為主。",
+    "accessed": "2026-11-24"
+  },
+  "S05": {
+    "title": "Statcast Glossary",
+    "url": "https://www.mlb.com/glossary/statcast",
+    "summary": "以追蹤系統量測球與球員運動，自2015年全面導入。區分實際量測與模型估計。",
+    "accessed": "2026-11-24"
+  },
+  "S06": {
+    "title": "Complete List (Offense)",
+    "url": "https://library.fangraphs.com/offense/offensive-statistics-list/",
+    "summary": "AVG=H/AB；HR 為全壘打數；RBI 為打點。wOBA 依各種打擊結果的得分價值加權，權重隨球季變化。PA 與 AB 不同。",
+    "accessed": "2026-11-24"
+  },
+  "S07": {
+    "title": "Complete List (Pitching)",
+    "url": "https://library.fangraphs.com/pitching/complete-list-pitching/",
+    "summary": "ERA=9×ER/IP；WHIP=(BB+H)/IP。xFIP 以飛球數乘聯盟 HR/FB 估算全壘打數，再套用 FIP 架構。",
+    "accessed": "2026-11-24"
+  },
+  "S08": {
+    "title": "Statcast Metrics Context",
+    "url": "https://baseballsavant.mlb.com/statcast-metrics-context",
+    "summary": "EV 為擊球初速（mph），LA 為仰角（度）；Hard-Hit% 為初速至少95 mph的擊球事件比例；Barrel% 為符合速度與角度條件的擊球事件比例。xBA 與 xwOBA 根據類似擊球結果估計，部分擊球考慮跑速；球季 xwOBA 也納入保送及三振。",
+    "accessed": "2026-11-24"
+  },
+  "S09": {
+    "title": "2025 MLB regular season stat leaders",
+    "url": "https://www.mlb.com/news/2025-mlb-regular-season-stat-leaders",
+    "summary": "2025 例行賽：Aaron Judge（NYY）AVG .331、96 barrels；Shohei Ohtani（LAD）55 HR、100 barrels；Paul Skenes（PIT）ERA 1.97。",
+    "accessed": "2026-11-24"
+  }
+}
